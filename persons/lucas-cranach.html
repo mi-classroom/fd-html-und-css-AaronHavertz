@@ -4,6 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <title>title</title>
+  <link rel="stylesheet" href="/styles/reset.css">
+  <link rel="stylesheet" href="/styles/fonts.css">
+  <link rel="stylesheet" href="/styles/icons.css">
+  <link rel="stylesheet" href="/styles/variables.css">
+  <link rel="stylesheet" href="/styles/basic.css">
+  <link rel="stylesheet" href="/styles/components.css">
 </head>
 
 <body>
@@ -36,12 +42,12 @@
   </header>
 
 
-  <aside>
+  <aside class="onpage-navigation">
 
     <h3>Inhalt</h3>
     <ul>
       <li><a href="#lucas-cranach-der-aeltere">Lucas Cranach der Ältere</a></li>
-      <li><a href="#hans-cranach">Hans Cranach</a></li>
+      <li class="current-onpage-navigation"><a href="#hans-cranach">Hans Cranach</a></li>
       <li><a href="#lucas-cranach-der-juengere">Lucas Cranach der Jüngere</a></li>
     </ul>
 
@@ -50,7 +56,8 @@
 
   <main>
 
-    <h1>Biografien von Lucas Cranach und seinen Söhnen</h1>
+    
+    <h1><span class="icon">menu</span>Biografien von Lucas Cranach und seinen Söhnen</h1>
 
     <article>
 
@@ -58,10 +65,9 @@
 
       <section>
 
-        <h3>Kurzüberblick</h3>
+        <aside class="infobox">
 
-        <aside>
-
+          <h3>Kurzüberblick</h3>
 
           <p>Lucas Cranach der Ältere war ein deutscher Maler und Grafiker der Renaissance. Er wurde um 1472 in Kronach
             geboren
@@ -97,7 +103,7 @@
           große
           Werkstatt ein, die sich zunächst im Wittenberger Schloss und später in der Stadt befand.</p>
 
-        <figure>
+        <figure class="picfigure">
           <img src="/assets/images/lucas-cranach-1.jpg" alt="lucas-cranach-1">
           <figcaption>​Lucas Cranach der Ältere, Die Heilige Sippe, um 1509/10. Lindenholztafel. Wien, Gemäldegalerie
             der
@@ -145,7 +151,7 @@
           liegenden Flügeln dargestellt.</p>
 
 
-        <figure>
+        <figure class="picfigure">
           <img src="/assets/images/lucas-cranach-2.jpg" alt="lucas-cranach-2">
           <figcaption>Lucas Cranach der Ältere, Selbstbildnis, 1531. Holztafel. Schloss Stolzenfels. Detail</figcaption>
         </figure>
@@ -283,86 +289,79 @@
     <article>
 
 
+
       <h2 id="hans-cranach">Hans Cranach</h2>
 
-      <section>
 
+      <figure class="picfigure">
+        <img src="/assets/images/hans-cranach.jpg" alt="hans-cranach-1">
+        <figcaption>
+          <h3>Kurzüberblick</h3>
+          <ul>
+            <li>Geboren ca. 1513 in Wittenberg als Sohn von Lucas Cranach</li>
+            <li>Ausbildung in der Werkstatt des Vaters, erste Werke ab 1534 signiert</li>
+            <li>Tätig für das sächsische Herrscherhaus, Studienreise nach Italien 1537</li>
+            <li>Verstarb 1537 in Bologna</li>
+          </ul>
+        </figcaption>
+      </figure>
 
-        <figure>
-          <img src="/assets/images/hans-cranach.jpg" alt="hans-cranach-1">
-          <figcaption>
-            <h3>Kurzüberblick</h3>
-            <ul>
-              <li>Geboren ca. 1513 in Wittenberg als Sohn von Lucas Cranach</li>
-              <li>Ausbildung in der Werkstatt des Vaters, erste Werke ab 1534 signiert</li>
-              <li>Tätig für das sächsische Herrscherhaus, Studienreise nach Italien 1537</li>
-              <li>Verstarb 1537 in Bologna</li>
-            </ul>
-          </figcaption>
-        </figure>
-
-      </section>
-
-
-      <section>
-        <table>
-          <tbody>
-            <tr>
-              <th>ca. 1513</th>
-              <td>geboren in Wittenberg als erster Sohn von Lucas Cranach und dessen Ehefrau Barbara Brengbier</td>
-            </tr>
-            <tr>
-              <th>ca. 1527/29</th>
-              <td>Beginn der Lehrzeit in der väterlichen Werkstatt zusammen mit Bruder Lucas</td>
-            </tr>
-            <tr>
-              <th>1534</th>
-              <td>Bildnis eines bärtigen Mannes (Museo Thyssen-Bornemisza, Madrid) datiert "1534" und signiert mit den
-                Initialen "HC"</td>
-            </tr>
-            <tr>
-              <th>1534</th>
-              <td>Empfang einer Zahlung an seinen Vater auf dem Leipziger Michaelismarkt</td>
-            </tr>
-            <tr>
-              <th>1536/37</th>
-              <td>in Abrechnungen für Arbeiten im Torgauer Schloss erwähnt</td>
-            </tr>
-            <tr>
-              <th>1537</th>
-              <td>Bild Herkules bei Omphale (Museo Thyssen-Bornemisza, Madrid), datiert "1537" und signiert mit
-                Schlangensignet zwischen Initialen "HC"</td>
-            </tr>
-            <tr>
-              <th>1537</th>
-              <td>Studienreise nach Italien</td>
-            </tr>
-            <tr>
-              <th>1537</th>
-              <td>Skizzenbuch</td>
-            </tr>
-            <tr>
-              <th>9. Okt. 1537</th>
-              <td>verstorben in Bologna</td>
-            </tr>
-          </tbody>
-        </table>
-
-      </section>
+      <table>
+        <tbody>
+          <tr>
+            <th>ca. 1513</th>
+            <td>geboren in Wittenberg als erster Sohn von Lucas Cranach und dessen Ehefrau Barbara Brengbier</td>
+          </tr>
+          <tr>
+            <th>ca. 1527/29</th>
+            <td>Beginn der Lehrzeit in der väterlichen Werkstatt zusammen mit Bruder Lucas</td>
+          </tr>
+          <tr>
+            <th>1534</th>
+            <td>Bildnis eines bärtigen Mannes (Museo Thyssen-Bornemisza, Madrid) datiert "1534" und signiert mit den
+              Initialen "HC"</td>
+          </tr>
+          <tr>
+            <th>1534</th>
+            <td>Empfang einer Zahlung an seinen Vater auf dem Leipziger Michaelismarkt</td>
+          </tr>
+          <tr>
+            <th>1536/37</th>
+            <td>in Abrechnungen für Arbeiten im Torgauer Schloss erwähnt</td>
+          </tr>
+          <tr>
+            <th>1537</th>
+            <td>Bild Herkules bei Omphale (Museo Thyssen-Bornemisza, Madrid), datiert "1537" und signiert mit
+              Schlangensignet zwischen Initialen "HC"</td>
+          </tr>
+          <tr>
+            <th>1537</th>
+            <td>Studienreise nach Italien</td>
+          </tr>
+          <tr>
+            <th>1537</th>
+            <td>Skizzenbuch</td>
+          </tr>
+          <tr>
+            <th>9. Okt. 1537</th>
+            <td>verstorben in Bologna</td>
+          </tr>
+        </tbody>
+      </table>
 
     </article>
 
 
     <article>
 
-      <h2 id="lucas-cranach-der-juengere">Lucas Cranach der Jüngere</h2>
-
       <section>
+        <h2 id="lucas-cranach-der-juengere">Lucas Cranach der Jüngere</h2>
 
-        <figure>
+
+        <figure class="picfigure">
           <img src="/assets/images/lucas-cranach-der-juengere.jpg" alt="lucas-cranach-der-juengere">
           <figcaption>
-            <h2>Kurzüberblick</h2>
+            <h3>Kurzüberblick</h3>
             <ul>
               <li>Geboren 1515 in Wittenberg als Sohn von Lucas Cranach d. Ä.</li>
               <li>Ausbildung in der väterlichen Werkstatt, erste Erwähnung 1535</li>
@@ -372,10 +371,6 @@
           </figcaption>
         </figure>
 
-      </section>
-
-
-      <section>
 
         <table>
           <tbody>
@@ -484,16 +479,15 @@
 
       </section>
 
-
       <section>
 
-        <figure>
+        <figure class="picfigure">
           <img src="/assets/images/lucas-cranach-3.jpg" alt="lucas-cranach-3">
           <figcaption>Lucas Cranach der Jüngere, Epitaphaltar in der Stadtkirche St. Peter und Paul in Weimar, 1555.
             Mitteltafel, Detail mit dem Bildnis Lucas Cranachs d. Ä.</figcaption>
         </figure>
 
-        <figure>
+        <figure class="picfigure">
           <img src="/assets/images/lucas-cranach-der-juengere.jpg" alt="lucas-cranach-der-juengere">
           <figcaption>Lucas Cranach der Jüngere, Epitaph für Fürst Joachim von Anhalt, 1565. Holztafel, St. Johannis und
             St.
