@@ -1,40 +1,47 @@
-html {
+html{
   scroll-behavior: smooth;
 }
-
 
 body {
-  font-family: ibm-plex-sans, sans-serif;
-  padding: 1rem;
-  color: #000;
-  background-color: #fff;
-  line-height: 140%;
-  font-weight: 300;
-
-  scroll-behavior: smooth;
-}
-
-header{
-  display: none;
+  font-family: var(--font-family-primary);
+  padding: var(--spacing-m);
+  color: var(--color-text-default);
+  background-color: var(--color-background-default);
+  line-height: var(--line-height-loose);
+  font-weight: var(--font-weight-light);
 }
 
 h1 {
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-regular);
+  margin-bottom: var(--spacing-3xl);
+  line-height: var(--line-height-tight);
+}
+
+h2{
+  font-size: var(--font-size-xl);
+  margin-top: var(--spacing-3xl);
+}
+
+img{
+  width: 100%;
+  display: block;
 }
 
 p,
-h1,
 h2,
 h3,
 h4,
 dd,
 li,
 figure{
-   margin-bottom: 1rem;
+   margin-bottom: var(--spacing-m);
 }
 
-p, dd, li, figcaption, td {
-    hyphens: auto;
+p, dd, li, figcaption{
+  hyphens: auto;;
 }
 
+strong{
+  font-weight: var(--font-weight-bold);
+}
